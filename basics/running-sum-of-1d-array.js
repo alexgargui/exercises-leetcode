@@ -5,10 +5,9 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-
 const runningSum = (nums) => {
   let total = 0;
-  const results = [];
+  let results = [];
   nums.forEach((number) => {
       total += number;
       results.push(total);
