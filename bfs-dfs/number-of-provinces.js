@@ -15,7 +15,7 @@ let dfs = ((isConnected, fila) => {
     }
 });
 
-var findCircleNum = function(isConnected) {
+let findCircleNum = (isConnected) => {
     let cont = 0;
     for (let i = 0; i < isConnected.length; i++) {
         for (let j = 0; j < isConnected.length; j++) {
