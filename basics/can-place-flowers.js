@@ -9,13 +9,12 @@
 const canPlaceFlowers = (flowerbed, n) => {
   flowerbed.forEach((it, pos) => {
       if (it == 0) {
-          if (flowerbed[pos-1] != 1 && flowerbed[pos+1] != 1 && n > 0) {
+          if (flowerbed[pos-1] !== 1 && flowerbed[pos+1] !== 1 && n > 0) {
               flowerbed[pos] = 1;
               n--;
           }
       }
   });
-  console.log(n);
-  if (n == 0) return true;
+  if (n === 0) return true;
   else return false;
 };
