@@ -6,7 +6,6 @@
  * @return {number}
  */
 const dfs = ((isConnected, fila) => {
-    console.log(fila);
     for (let j = 0; j < isConnected.length; j++) {
         if (isConnected[fila][j] === 1) {
             isConnected[fila][j] = 0;
