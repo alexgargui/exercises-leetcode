@@ -5,7 +5,7 @@
  * @param {number[][]} isConnected
  * @return {number}
  */
-let dfs = ((isConnected, fila) => {
+const dfs = ((isConnected, fila) => {
     console.log(fila);
     for (let j = 0; j < isConnected.length; j++) {
         if (isConnected[fila][j] == 1) {
@@ -15,7 +15,7 @@ let dfs = ((isConnected, fila) => {
     }
 });
 
-let findCircleNum = (isConnected) => {
+const findCircleNum = (isConnected) => {
     let cont = 0;
     for (let i = 0; i < isConnected.length; i++) {
         for (let j = 0; j < isConnected.length; j++) {

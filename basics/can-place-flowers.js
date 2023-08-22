@@ -6,7 +6,7 @@
  * @param {number} n
  * @return {boolean}
  */
-let canPlaceFlowers = (flowerbed, n) => {
+const canPlaceFlowers = (flowerbed, n) => {
   flowerbed.forEach((it, pos) => {
       if (it == 0) {
           if (flowerbed[pos-1] != 1 && flowerbed[pos+1] != 1 && n > 0) {
