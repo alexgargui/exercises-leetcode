@@ -5,7 +5,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var majorityElement = function(nums) {
+const majorityElement = (nums) => {
   let candidate;
   let count = 0;
   nums.forEach((num) => {
