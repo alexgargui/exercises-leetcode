@@ -14,16 +14,16 @@
  * @param {number} targetSum
  * @return {boolean}
  */
-const inorder = (node, sum, targetSum) => {
+const preorder = (node, sum, targetSum) => {
     if (node !== null) {
         if ((sum + node.val) === targetSum && node.left === null && node.right === null) result = true;
-        inorder(node.left, sum + node.val, targetSum);
-        inorder(node.right, sum + node.val, targetSum);
+        preorder(node.left, sum + node.val, targetSum);
+        preorder(node.right, sum + node.val, targetSum);
     }
 }
 
 const hasPathSum = (root, targetSum) => {
     result = false;
-    inorder(root, 0, targetSum);
+    preorder(root, 0, targetSum);
     return result;
 };

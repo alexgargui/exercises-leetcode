@@ -15,16 +15,16 @@
  * @param {number} high
  * @return {number}
  */
-const inorder = (node, low, high) => {
+const preorder = (node, low, high) => {
   if (node !== null) {
       if (node.val >= low && node.val <= high) result += node.val;
-      inorder(node.left, low, high);
-      inorder(node.right, low, high);
+      preorder(node.left, low, high);
+      preorder(node.right, low, high);
   }
 }
 
 const rangeSumBST = (root, low, high) => {
   result = 0;
-  inorder(root, low, high);
+  preorder(root, low, high);
   return result;
 };
