@@ -15,7 +15,7 @@
  */
 let inOrderTraversal = [];
 
-let inorder = (node) => {
+const inorder = (node) => {
     if (node !== null) {
         inorder(node.left);
         inOrderTraversal.push(node.val);
@@ -23,7 +23,7 @@ let inorder = (node) => {
     }
 }
 
-let inorderTraversal = (root) => {
+const inorderTraversal = (root) => {
     inOrderTraversal = [];
     inorder(root);
     return inOrderTraversal;
