@@ -13,8 +13,6 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
-let preOrderTraversal = [];
-
 const preorder = (node) => {
     if (node !== null) {
         preOrderTraversal.push(node.val);

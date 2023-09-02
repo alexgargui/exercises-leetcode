@@ -13,9 +13,6 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
-
-let postOrderTraversal = [];
-
 const postorder = (node) => {
     if (node !== null) {
         postorder(node.left);
