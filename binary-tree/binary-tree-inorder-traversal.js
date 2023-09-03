@@ -13,6 +13,8 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
+let inOrderTraversal = [];
+
 const inorder = (node) => {
     if (node !== null) {
         inorder(node.left);

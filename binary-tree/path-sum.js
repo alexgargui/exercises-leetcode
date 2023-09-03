@@ -14,6 +14,8 @@
  * @param {number} targetSum
  * @return {boolean}
  */
+let result = false;
+
 const preorder = (node, sum, targetSum) => {
     if (node !== null) {
         if ((sum + node.val) === targetSum && node.left === null && node.right === null) result = true;

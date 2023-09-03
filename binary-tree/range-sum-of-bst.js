@@ -15,6 +15,8 @@
  * @param {number} high
  * @return {number}
  */
+let result = 0;
+
 const preorder = (node, low, high) => {
   if (node !== null) {
       if (node.val >= low && node.val <= high) result += node.val;

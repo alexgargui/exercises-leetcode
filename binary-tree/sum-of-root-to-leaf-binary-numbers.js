@@ -13,6 +13,8 @@
  * @param {TreeNode} root
  * @return {number}
  */
+let sum = 0;
+
 const preorder = (node, binary) => {
   if (node !== null) {
       if (node.left === null && node.right === null) sum += parseInt(binary.concat(node.val), 2);
