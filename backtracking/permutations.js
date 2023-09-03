@@ -2,7 +2,7 @@
  * Problem: Can place flowers
  * Link to problem: https://leetcode.com/problems/permutations
  * Coder: alexgargui
- * Algorithm: Solved with Heap Algorithm instead of backtracking
+ * Algorithm: Solved with Heap's Algorithm instead of backtracking
  * @param {number[]} nums
  * @return {number[][]}
  */
