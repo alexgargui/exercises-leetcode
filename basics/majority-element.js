@@ -2,6 +2,7 @@
  * Problem: Majority element
  * Link to problem: https://leetcode.com/problems/majority-element
  * Coder: alexgargui
+ * Algorithm: Boyer-Moore voting algorithm
  * @param {number[]} nums
  * @return {number}
  */
